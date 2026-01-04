@@ -1,4 +1,4 @@
-# ARRAY and Its Levels:
+# ARRAY and STRUCTURE Its Levels:
 #practice on functions to before array
 
 ✅ 📘 Function Programs in C :
@@ -195,3 +195,4 @@ Exam Favourite
 ----------------------------------------------------------------
 65.Applications of 2D arrays.
 ----------------------------------------------------------------
+STRUCTURE ---
