@@ -1,24 +1,17 @@
 #include <stdio.h>
-int main()
-{
-    int a[2][2], i, j, count=0;
-    for(i=0;i<2;i++)
-    {
-        for(j=0;j<2;j++)
-        {
-            scanf("%d",&a[i][j]);
-        }
-	}
-    for(i=0;i<2;i++)
-    {
-        for(j=0;j<2;j++)  
-        {
-            if(a[i][j] % 2 == 0)
-            {
-                count++;
-            }
-        }
-    }
-    printf("%d",count);
+struct student {
+    char name[50];
+    int roll;
+    float marks;
+};
+struct student input() {
+    struct student s;
+    scanf("%s %d %f", s.name, &s.roll, &s.marks);
+    return s;
+}
+int main() {
+    struct student s1 = input();
+    
     return 0;
 }
+

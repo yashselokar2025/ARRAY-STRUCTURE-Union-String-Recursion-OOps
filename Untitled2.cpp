@@ -1,24 +1,17 @@
- //Read and print a 3×3 matrix.
-#include<stdio.h>
-int main()
-{
-	int i,j,a[3][3];
-	for(i=0;i<3;i++)
-	{
-		for(j=0;j<3;j++)
-		{
-			printf("Enter the number to store in msatrix form : ");
-			scanf("%d",&a[i][j]);
-		}
-		
-	}
-	for(i=0;i<3;i++)
-	{
-		for(j=0;j<3;j++)
-		{
-			printf("%d",a[i][j]);
-		}
-		printf(" ");
-	}
-	return 0;
+#include <stdio.h>
+struct student {
+    char name[50];
+    int roll;
+    float marks;
+};
+struct student input() {
+    struct student s;
+    scanf("%s %d %f", s.name, &s.roll, &s.marks);
+    printf("Name-%s\nRoll-%d\nMarks-%2f\n",s.name,s.roll,s.marks);
+    return s;
 }
+int main() {
+    struct student s1 = input();
+    return 0;
+}
+
